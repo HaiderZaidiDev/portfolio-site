@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
 
-function App() {
+// Bootstrap
+import Container from 'react-bootstrap/Container'
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+// Child Components
+import MainNavbar from './components/MainNavbar'
+import Header from './components/Header'
+import About from './components/About'
+import Projects from './components/Projects'
+import Blog from './components/Blog'
+import BlogPost from './components/BlogPost'
+
+
+const AppContent = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+      <MainNavbar/>
+      <Header
+        title="Hey, I'm Haider."
+        body="A software engineer and a business student; who could of known?"
+        showIcons={true}
+      />
+      <About/>
+      <Projects/>
+    </Container>
+  );
+}
+
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" component={AppContent} exact />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:blogId" component={BlogPost} />
+      </Switch>
+    </Router>
   );
 }
 
