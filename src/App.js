@@ -2,7 +2,7 @@ import './index.css';
 
 // Bootstrap
 import Container from 'react-bootstrap/Container'
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { HashRouter as Router, Switch, Route} from "react-router-dom";
 
 // Child Components
 import MainNavbar from './components/MainNavbar'

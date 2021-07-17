@@ -1,6 +1,6 @@
 import '../index.css';
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, useRouteMatch, useParams} from "react-router-dom";
+import { HashRouter as Router, Switch, Route, useRouteMatch, useParams} from "react-router-dom";
 
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -22,7 +22,7 @@ const BlogPost = (props) => {
               <p id="name"><strong>{blog.author}</strong></p>
               <p id="date">{blog.postDate}</p>
             </div>
-            <img src={Placeholder} class="blog-image"></img>
+            <img src={blog.image ? blog.image:Placeholder} class="blog-image"></img>
             <div className="blog-body">
               {blog.body.map(paragraph => (
                 <p>{paragraph}</p>

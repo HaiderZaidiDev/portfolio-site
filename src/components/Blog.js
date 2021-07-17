@@ -1,6 +1,6 @@
 import '../index.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, useRouteMatch, useParams, useLocation, Link} from "react-router-dom";
+import { HashRouter as Router, Switch, Route, useRouteMatch, useParams, useLocation, Link} from "react-router-dom";
 
 
 // Bootstrap
@@ -56,7 +56,7 @@ const FeaturedBlog = (props) => {
         <div className="featured-blog-post">
             <Row>
                 <Col md={6} xs={12}>
-                  <a href={props.blog && `${path}/${props.blog.id}`}>
+                  <a href={props.blog && `#${path}/${props.blog.id}`}>
                     <h2 id="title"> {props.blog.title}</h2>
                     <img src={props.blog.image ? props.blog.image:Placeholder} class="featured-blog-image"></img>
                   </a>
@@ -86,7 +86,7 @@ const FeaturedBlogSmall = (props) => {
     <Col md={6} xs={12}>
       <div className="featured-blog-post" id="small">
           <img src={props.blog.image ? props.blog.image:Placeholder} class="featured-blog-image" id="small"></img>
-          <a href={props.blog && `${path}/${props.blog.id}`}>
+          <a href={props.blog && `#${path}/${props.blog.id}`}>
             <h3>{props.blog.title}</h3>
           </a>
             <Row className="featured-blog-content" id="small">

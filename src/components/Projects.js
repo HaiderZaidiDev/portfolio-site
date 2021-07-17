@@ -22,7 +22,7 @@ const Projects = () => {
     },
     {
       name: "Financial Data",
-      description: "Calculates over 25 financial ratios for technical analysis using data scraped from Market Watch and the Alpha Vantage API with Python (Django)",
+      description: "Calculates over 25 financial ratios for technical analysis using data scraped from Market Watch and the Alpha Vantage API with Python (Django).",
       link: "https://haiderzaidi.ca/financial-ratios",
     },
     {
@@ -32,7 +32,7 @@ const Projects = () => {
     },
     {
       name: "Schulich Assignment Tracker",
-      description: "Automating the creation of calendar-spreadsheets for students to keep track of assignments using Python (Django)",
+      description: "Automating the creation of calendar-spreadsheets for students to keep track of assignments using Python (Django).",
       link: "https://haiderzaidi.ca/assignment-tracker"
     },
     {
