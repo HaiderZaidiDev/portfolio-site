@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Blogs from './Blogs';
-import Placeholder from './images/placeholder-blog.png'
+import Placeholder from './files/placeholder-blog.png'
 import MainNavbar from './MainNavbar';
 
 const BlogPost = (props) => {

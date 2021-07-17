@@ -16,7 +16,7 @@ const Blogs = {
   "sample-blog-2": {
     id: "sample-blog-2",
     author: "Haider Zaidi",
-    title: "These are some placeholder blogs to fill up the space, till I make one.",
+    title: "These are some placeholder blogs to fill up the space.",
     body: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mattis fermentum, sagittis. Purus, ac nam at lectus odio enim condimentum nibh. Id sem purus ullamcorper velit lorem consectetur mus aliquam. Sit ornare pharetra id ultricies sollicitudin eget sapien tempus. Diam id neque, sollicitudin auctor ipsum. Tristique amet adipiscing enim, lorem duis. Tincidunt enim netus leo, consectetur vestibulum ut. Quis ullamcorper nec arcu cursus at enim sapien semper fringilla. Leo sed aliquam risus urna, quam nunc non ultricies pulvinar.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus mattis fermentum, sagittis. Purus, ac nam at lectus odio enim condimentum nibh. Id sem purus ullamcorper velit lorem consectetur mus aliquam. Sit ornare pharetra id ultricies sollicitudin eget sapien tempus. Diam id neque, sollicitudin auctor ipsum. Tristique amet adipiscing enim, lorem duis. Tincidunt enim netus leo, consectetur vestibulum ut. Quis ullamcorper nec arcu cursus at enim sapien semper fringilla. Leo sed aliquam risus urna, quam nunc non ultricies pulvinar.",

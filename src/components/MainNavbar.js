@@ -1,5 +1,7 @@
 import '../index.css';
 import React from 'react';
+import { Redirect } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // Bootstrap
 import Container from 'react-bootstrap/Container';
@@ -7,7 +9,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import { HashLink as Link } from 'react-router-hash-link';
+
+import Resume from './files/Haider Zaidi - Resume (Schulich).pdf';
 
 
 // Note, "Navbar" is already reserved by bootstrap, so we must prefix it.
@@ -32,7 +35,7 @@ const MainNavbar = () => {
                 <Link class="nav-link" to="/blog">Blog </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/resume">Resume</Link>
+                <a class="nav-link" href={Resume}>Resume</a>
               </li>
             </Nav>
           </Navbar.Collapse>

@@ -11,7 +11,7 @@ import Row from 'react-bootstrap/Row';
 // Child Components
 import MainNavbar from './MainNavbar';
 import Header from './Header';
-import Placeholder from './images/placeholder.png';
+import Placeholder from './files/placeholder.png';
 import BlogPost from './BlogPost'
 import Blogs from './Blogs';
 

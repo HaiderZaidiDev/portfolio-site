@@ -251,5 +251,14 @@ p#date {
     display: none;
   }
 
+  .about-wrapper {
+    height: 550px;
+    padding: 5vh 5vw 5vh 5vw;
+  }
+
+  .featured-blog-content.row {
+    padding-top: 1.5vh !important;
+  }
+
 
 }
