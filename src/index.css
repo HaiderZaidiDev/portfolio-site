@@ -11,17 +11,21 @@ a {
 }
 
 h1 {
-    font-family: Inter;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 4em;
 }
 
 h2 {
-    font-family: Inter;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 2.25em;
+}
+
+h3 {
+  font-family: "Inter";
 }
 
 
