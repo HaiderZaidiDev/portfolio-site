@@ -11,6 +11,11 @@ import { GithubFill, LinkedInV1Fill } from 'akar-icons';
 const Projects = () => {
   const projects = [
     {
+      name: "Virtual (AR) Steering Wheel",
+      description: "Created an augemented reality steering wheel with Python (OpenCV) and machine learning models from Mediapipe",
+      link: "https://github.com/HaiderZaidiDev/virtual-ml-steering-wheel",
+    },
+    {
       name: "Webumé",
       description: "Helping students get internships, by automating the creation of web-based resumés with Python (Django).",
       link: "https://webume.ca",
