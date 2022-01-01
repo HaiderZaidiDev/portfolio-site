@@ -23,19 +23,16 @@ const MainNavbar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <li class="nav-item active">
-                <Link class="nav-link" to="/">Home</Link>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/#about">About </Link>
+                <a class="nav-link" href="/#about">About </a>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/#projects">Projects </Link>
+                <a class="nav-link" href="/#projects">Projects </a>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/blog">Blog </Link>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href={Resume}>Resume</a>
+                <a class="nav-link" href="https://medium.com/@haider-zaidi">Blog </a>
               </li>
             </Nav>
           </Navbar.Collapse>

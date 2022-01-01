@@ -4,9 +4,10 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Resume from './files/Haider Zaidi - Resume (Schulich).pdf';
 
 // Icons
-import { GithubFill, LinkedInV1Fill } from 'akar-icons';
+import { File, GithubFill, LinkedInV1Fill } from 'akar-icons';
 
 const Header = (props) => {
   return (
@@ -15,12 +16,13 @@ const Header = (props) => {
         <div className="header">
           <h1> {props.title} </h1>
           <p> {props.body} </p>
-          {props.showIcons &&
+          <Row className="justify-content-center align-items-center">
+            <button className="action-btn"> <File strokeWidth={1.25} size={16} /> <a href={Resume} target="_blank">View R&eacute;sum&eacute;</a></button>
             <div className="icons">
               <a href="https://github.com/HaiderZaidiDev" target="_blank"><GithubFill size={24} /></a>
               <a href="https://www.linkedin.com/in/haider-zaidi/" target="_blank"><LinkedInV1Fill size={24} /></a>
             </div>
-          }
+          </Row>
         </div>
       </Col>
     </Row>

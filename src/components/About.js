@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 // Images
-import code from './files/about-code.png'
+import code from './files/about-code.svg'
 
 
 const About = () => {
@@ -15,16 +15,15 @@ const About = () => {
     <React.Fragment>
       <a id="about"></a>
       <Row className="about-wrapper">
-        <Col xs={6}>
+        <Col xs={6} className="d-none d-md-block">
           <div className="about-image">
             <img src={code} alt=""></img>
           </div>
         </Col>
         <Col md={6} xs={12}>
           <div className="about-content">
-            <p id="subheader"> About</p>
-            <h2> Bridging the gap between business and computer science. </h2>
-            <p className="about-text" id="dark"> As a developer who loves creating things; my background deviates from one of a traditional business student, empowering me to attack problems through multiple perspectives, sync well with cross-functional teams and hold a deep understanding in what makes an exemplary product.</p>
+            <h2> Bridging the gap. </h2>
+            <p className="about-text" id="dark"> As a business student with a passion for technology and software engineering, I love creating things - placing me in a unique position to attack problems through multiple perspectives, sync-well in cross functional teams, and hold a deep understanding in what makes an exemplary product.</p>
           </div>
         </Col>
       </Row>

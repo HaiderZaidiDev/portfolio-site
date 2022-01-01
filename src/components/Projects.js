@@ -5,6 +5,15 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+
+import Placeholder from './files/placeholder.jpeg'
+import SteeringWheel from './files/steering-wheel.png'
+import Webume from './files/webume.png'
+import FinancialData from './files/financial-data.png'
+import TwitterClone from './files/twitter-clone.png'
+import AssignmentTracker from './files/assignment-tracker.png'
+import Keywords from './files/keywords.png'
+
 // Icons
 import { GithubFill, LinkedInV1Fill } from 'akar-icons';
 
@@ -13,74 +22,79 @@ const Projects = () => {
     {
       name: "Virtual (AR) Steering Wheel",
       description: "Created an augemented reality steering wheel with Python (OpenCV) and machine learning models from Mediapipe",
+      image: SteeringWheel,
       link: "https://github.com/HaiderZaidiDev/virtual-ml-steering-wheel",
+    },
+    {
+      name: "Job Listing Keyword Scanner",
+      description: "Helps job-seekers optimize their resume by using artiifcal intelligence (NLP) to scan keywords in a job listing.",
+      image: Keywords,
+      link: "https://haiderzaidi.ca/keywords",
     },
     {
       name: "Webumé",
       description: "Helping students get internships, by automating the creation of web-based resumés with Python (Django).",
+      image: Webume,
       link: "https://webume.ca",
     },
     {
-      name: "Equity Flow",
-      description: "Developing a SaaS product for private equity funds to streamline deal flow by automating capital call notices with React.",
-      link: "",
-    },
-    {
       name: "Financial Data",
-      description: "Calculates over 25 financial ratios for technical analysis using data scraped from Market Watch and the Alpha Vantage API with Python (Django).",
+      description: "Calculates over 25 financial ratios using data scraped from Market Watch and the Alpha Vantage API with Python (Django)",
+      image: FinancialData,
       link: "https://haiderzaidi.ca/financial-ratios",
     },
     {
       name: "Twitter Clone",
       description: "Built a Twitter clone featuring OAuth2, tweets, likes, retweets, link recognition and spam filters with React.",
-      link: "https://haiderzaidi.ca/assignment-tracker"
+      image: TwitterClone,
+      link: "https://haiderzaidi.ca/twitter-react"
     },
     {
       name: "Schulich Assignment Tracker",
       description: "Automating the creation of calendar-spreadsheets for students to keep track of assignments using Python (Django).",
+      image: AssignmentTracker,
       link: "https://haiderzaidi.ca/assignment-tracker"
-    },
-    {
-      name: "Stack Size",
-      description: "Programmed an iOS app for gamers to calculate their stack size in poker with React-Native.",
-      link: "https://github.com/HaiderZaidiDev/stacksize",
     },
   ]
   return (
     <React.Fragment>
       <a id="projects"></a>
       <Row className="projects-wrapper">
-        <Col  md={5} xs={12}>
+        <Col xs={10}>
           <div className="projects-header">
             <h2> Projects </h2>
             <p> “For the things we have to learn before we can do them, we learn by doing them.” (Aristotle) </p>
           </div>
-          <div className="projects">
+          <Row className="projects ">
             {projects.map((project, index) => (
-              <ProjectItem
+              <Project
                 name={project.name}
                 description={project.description}
+                image={project.image}
                 link={project.link}
                 />
 
             ))}
-          </div>
+          </Row>
         </Col>
       </Row>
     </React.Fragment>
   );
 }
 
-const ProjectItem = (props) => {
+const Project = (props) => {
   return (
     <React.Fragment>
-      <div className="project-item">
-        {props.link
-          ? <a href={props.link} target="_blank"><h3>{props.name}</h3></a>
-          : <h3>{props.name}</h3>
-        }
-        <p>{props.description}</p>
-      </div>
+      <Col xs={12} md={4}>
+        <a href={props.link} target="_blank">
+          <div className="project" style={{background: `url(${props.image})`, backgroundSize: 'cover'}}>
+          <div className="project-desc">
+            <a href={props.link} target="_blank"><h3>{props.name}</h3></a>
+            <p>{props.description}</p>
+          </div>
+        </div>
+        </a>
+      </Col>
     </React.Fragment>
   );
 }
