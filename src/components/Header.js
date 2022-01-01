@@ -17,7 +17,11 @@ const Header = (props) => {
           <h1> {props.title} </h1>
           <p> {props.body} </p>
           <Row className="justify-content-center align-items-center">
-            <button className="action-btn"> <File strokeWidth={1.25} size={16} /> <a href={Resume} target="_blank">View R&eacute;sum&eacute;</a></button>
+            <a href={Resume} target="_blank" className="action-btn-wrapper">
+              <button className="action-btn">
+                <File strokeWidth={1.25} size={16} />View R&eacute;sum&eacute;
+              </button>
+            </a>
             <div className="icons">
               <a href="https://github.com/HaiderZaidiDev" target="_blank"><GithubFill size={24} /></a>
               <a href="https://www.linkedin.com/in/haider-zaidi/" target="_blank"><LinkedInV1Fill size={24} /></a>

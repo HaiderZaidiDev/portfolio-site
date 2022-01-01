@@ -113,6 +113,11 @@ strong {
   color: #446CE5;
 }
 
+.action-btn-wrapper {
+  display: inline;
+  width: auto;
+}
+
 .action-btn {
   display: inline;
   width: 158px;
