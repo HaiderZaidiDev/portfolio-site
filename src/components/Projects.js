@@ -72,17 +72,19 @@ const Projects = () => {
               <p> “For the things we have to learn before we can do them, we learn by doing them.” (Aristotle) </p>
             </div>
           </Fade>
-          <Row className="projects ">
-            {projects.map((project, index) => (
-              <Project
-                name={project.name}
-                description={project.description}
-                image={project.image}
-                link={project.link}
-                />
+          <Fade cascade>
+            <Row className="projects ">
+              {projects.map((project, index) => (
+                <Project
+                  name={project.name}
+                  description={project.description}
+                  image={project.image}
+                  link={project.link}
+                  />
 
-            ))}
-          </Row>
+              ))}
+            </Row>
+          </Fade>
         </Col>
       </Row>
     </React.Fragment>
@@ -93,7 +95,6 @@ const Project = (props) => {
   return (
     <React.Fragment>
       <Col xs={12} md={4}>
-        <Fade cascade>
           <a href={props.link} target="_blank">
             <div className="project" style={{background: `url(${props.image})`, backgroundSize: 'cover'}}>
             <div className="project-desc">
@@ -102,7 +103,6 @@ const Project = (props) => {
             </div>
           </div>
           </a>
-        </Fade>
       </Col>
     </React.Fragment>
   );
