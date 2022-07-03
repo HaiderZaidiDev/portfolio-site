@@ -1,11 +1,15 @@
 import '../index.css';
 import React from 'react';
 
+/* Bootstrap Components */
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+/* External Libraries */
+import Fade from 'react-reveal/Fade';
 
+/* Project Thumbnails */
 import Placeholder from './files/placeholder.jpeg'
 import SteeringWheel from './files/steering-wheel.png'
 import Webume from './files/webume.png'
@@ -13,6 +17,7 @@ import FinancialData from './files/financial-data.png'
 import TwitterClone from './files/twitter-clone.png'
 import AssignmentTracker from './files/assignment-tracker.png'
 import Keywords from './files/keywords.png'
+
 
 // Icons
 import { GithubFill, LinkedInV1Fill } from 'akar-icons';
@@ -61,10 +66,12 @@ const Projects = () => {
       <a id="projects"></a>
       <Row className="projects-wrapper">
         <Col xs={10}>
-          <div className="projects-header">
-            <h2> Projects </h2>
-            <p> “For the things we have to learn before we can do them, we learn by doing them.” (Aristotle) </p>
-          </div>
+          <Fade cascade>
+            <div className="projects-header">
+              <h2> Projects </h2>
+              <p> “For the things we have to learn before we can do them, we learn by doing them.” (Aristotle) </p>
+            </div>
+          </Fade>
           <Row className="projects ">
             {projects.map((project, index) => (
               <Project
@@ -86,14 +93,16 @@ const Project = (props) => {
   return (
     <React.Fragment>
       <Col xs={12} md={4}>
-        <a href={props.link} target="_blank">
-          <div className="project" style={{background: `url(${props.image})`, backgroundSize: 'cover'}}>
-          <div className="project-desc">
-            <a href={props.link} target="_blank"><h3>{props.name}</h3></a>
-            <p>{props.description}</p>
+        <Fade cascade>
+          <a href={props.link} target="_blank">
+            <div className="project" style={{background: `url(${props.image})`, backgroundSize: 'cover'}}>
+            <div className="project-desc">
+              <a href={props.link} target="_blank"><h3>{props.name}</h3></a>
+              <p>{props.description}</p>
+            </div>
           </div>
-        </div>
-        </a>
+          </a>
+        </Fade>
       </Col>
     </React.Fragment>
   );

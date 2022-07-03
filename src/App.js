@@ -16,7 +16,7 @@ const App = () => {
       <MainNavbar/>
       <Header
         title="Hey, I'm Haider."
-        body="A second-year business student with a passion for tech."
+        body="A third-year business student with a passion for tech."
         showIcons={true}
       />
       <About/>

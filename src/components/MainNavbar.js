@@ -32,7 +32,7 @@ const MainNavbar = () => {
                 <a class="nav-link" href="/#projects">Projects </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://medium.com/@haider-zaidi">Blog </a>
+                <a class="nav-link" href="/linkedin" target="_blank">Linkedin </a>
               </li>
             </Nav>
           </Navbar.Collapse>

@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Resume from './files/Haider Zaidi - Resume (Schulich).pdf';
 
 // Icons
-import { File, GithubFill, LinkedInV1Fill } from 'akar-icons';
+import { Envelope, GithubFill, LinkedInV1Fill } from 'akar-icons';
 
 const Header = (props) => {
   return (
@@ -16,10 +16,10 @@ const Header = (props) => {
         <div className="header">
           <h1> {props.title} </h1>
           <p> {props.body} </p>
-          <Row className="justify-content-center align-items-center">
-            <a href={Resume} target="_blank" className="action-btn-wrapper">
+          <Row className="justify-content-center align-items-center" id="resume-btn">
+            <a href="mailto:haider-zaidi@outlook.com?subject=Lets chat." target="_blank" className="action-btn-wrapper">
               <button className="action-btn">
-                <File strokeWidth={1.25} size={16} />View R&eacute;sum&eacute;
+                <Envelope strokeWidth={1.25} size={16} /> Get in touch
               </button>
             </a>
             <div className="icons">
