@@ -12,13 +12,15 @@ import Projects from './components/Projects'
 
 const App = () => {
   return (
-    <Container fluid>
-      <MainNavbar/>
-      <Header
-        title="Hey, I'm Haider."
-        body="A third-year business student with a passion for tech."
-        showIcons={true}
-      />
+    <Container fluid id="no-padding">
+      <div className="hero">
+        <MainNavbar/>
+        <Header
+          title="Hey, I'm Haider"
+          body="A third-year business student with a passion for tech."
+          showIcons={true}
+        />
+      </div>
       <About/>
       <Projects/>
     </Container>

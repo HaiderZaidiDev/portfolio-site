@@ -14,7 +14,7 @@ const Header = (props) => {
     <Row className="header-wrapper">
       <Col md={5} xs={12}>
         <div className="header">
-          <h1> {props.title} </h1>
+          <h1> {props.title}</h1>
           <p> {props.body} </p>
           <Row className="justify-content-center align-items-center" id="resume-btn">
             <a href="mailto:haider-zaidi@outlook.com?subject=Lets chat." target="_blank" className="action-btn-wrapper">

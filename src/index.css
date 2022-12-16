@@ -84,6 +84,8 @@ strong {
 }
 
 /* Header */
+
+
 .header-wrapper {
   height: 350px;
   margin-bottom: 5vh;
@@ -160,7 +162,7 @@ strong {
 }
 
 .about-image img {
-  width: 100%;
+  width: 40vw;
   height: auto;
   padding-right: 5px;
 }

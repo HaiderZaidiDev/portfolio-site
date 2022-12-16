@@ -17,6 +17,8 @@ import FinancialData from './files/financial-data.png'
 import TwitterClone from './files/twitter-clone.png'
 import AssignmentTracker from './files/assignment-tracker.png'
 import Keywords from './files/keywords.png'
+import DonateMask from './files/donatemask.png'
+import GetTranscript from './files/gettranscript.png'
 
 
 // Icons
@@ -24,6 +26,18 @@ import { GithubFill, LinkedInV1Fill } from 'akar-icons';
 
 const Projects = () => {
   const projects = [
+    {
+      name: "Donate Mask",
+      description: "to donate and request face masks using React, Node.js, MongoDB, and Stripe. Donated 100k+ Masks.",
+      image: DonateMask,
+      link: "https://donatemask.ca",
+    },
+    {
+      name: "YouTube Accessibility - Transcribe, Translate, Summarize",
+      description: "Tackles accessibility issues on YouTube by transcribing, translating, and summarizing videos, made with Python (Flask) and React.js",
+      image: GetTranscript,
+      link: "https://gettranscript.ca",
+    },
     {
       name: "Virtual (AR) Steering Wheel",
       description: "Created an augemented reality steering wheel with Python (OpenCV) and machine learning models from Mediapipe",
