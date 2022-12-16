@@ -162,9 +162,9 @@ strong {
 }
 
 .about-image img {
-  width: 40vw;
-  height: auto;
+  max-height: 500px;
   padding-right: 5px;
+  max-width: 100%;
 }
 
 .about-content {

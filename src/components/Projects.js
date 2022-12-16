@@ -28,7 +28,7 @@ const Projects = () => {
   const projects = [
     {
       name: "Donate Mask",
-      description: "to donate and request face masks using React, Node.js, MongoDB, and Stripe. Donated 100k+ Masks.",
+      description: "Web-app to donate and request face masks using React, Node.js, MongoDB, and Stripe. Raised ~15k+ and donated over 100k face masks.",
       image: DonateMask,
       link: "https://donatemask.ca",
     },
