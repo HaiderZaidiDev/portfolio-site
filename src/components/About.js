@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 // Images
-import code from './files/about-code.svg'
+import code from './files/about-code-updated.svg'
 
 
 const About = () => {
